@@ -5,6 +5,6 @@ namespace RepositoryPattern;
 
 public class RepositoryPatternDbContext(DbContextOptions<RepositoryPatternDbContext> options) : DbContext(options)
 {
-    public virtual DbSet<BookEntity> Books { get; set; }
-    public virtual DbSet<PhoneEntity> Phones { get; set; }
+    public virtual required DbSet<BookEntity> Books { get; set; }
+    public virtual required DbSet<PhoneEntity> Phones { get; set; }
 }
